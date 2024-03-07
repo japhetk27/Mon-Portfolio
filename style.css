@@ -90,7 +90,7 @@ body{
 
 .home{
     height: 100vh;
-    background: url('codeur.jpeg') no-repeat;
+    background: url('background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -112,12 +112,40 @@ body{
  
 }
 
+footer {
+  background-color: #95daec; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  padding: 20px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+}
+
+footer h2 {
+  margin-bottom: 10px; /* Marge en bas du titre */
+}
+
+footer p {
+  margin-bottom: 5px; /* Marge en bas des paragraphes */
+}
+
+footer a {
+  color: #fff; /* Couleur des liens */
+  text-decoration: none; /* Supprimer soulignement des liens */
+  transition: color 0.3s; /* Transition de couleur */
+}
+
+footer a:hover {
+  color: #ffcc00; /* Couleur des liens au survol */
+}
+
+
+
+
 
 
 /* Animation property */
 h1 {
     animation: wiggle 2s linear infinite;
-    color: #00abf0
+    color: #95daec
   }
   
   /* Keyframes */
