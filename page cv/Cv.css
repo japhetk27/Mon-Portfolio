@@ -43,14 +43,15 @@ body{
     text-align: center;
 }
 .profile img{
-    width: 100%;
+    width: 70%;
     border-radius: 50%;
     border: 8px solid #002333;
     
 }
 
 .name{
-    font-size: 2rem;
+    /*font-size: 2rem;*/
+    font-family: cursive;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -207,12 +208,14 @@ body{
     font-size: 1.3rem;
     color: #002333;
     text-transform: uppercase;
+    font-family: serif;
 }
 .tl-title-2{
     letter-spacing: 1px;
     font-size: 1.3rem;
     color: #2D9CDB;
     text-transform: uppercase;
+    font: italic small-caps bold 16px/2 cursive;
 }
 
 .tl-content{
