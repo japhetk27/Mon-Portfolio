@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="Cv.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     
+
+    <style>
+        .project-list {
+            display: none;
+        }
+    </style>
+
 </head>
 <body>
     
@@ -54,76 +62,99 @@
                     
                 </div>
                 <section class="skills-section">
-                    <h3 class="main-title"> <button id="toggleSkills"><h2>Compétence Technique</h2></button></h3>
-                    <ul id="skillsList" class="collapse">
+                    <h4 class="main-title" id="toggleSkills">Compétences Techniques</h4>
+                    <ul class="skill-list">
                         <li>
-                            <p class="skill-title">DHCP, DNS, TCP/IP, VLAN</p>
+                            <span class="skill-category">Réseau</span>
+                            <ul class="skill-item">
+                                <li>DHCP</li>
+                                <li>DNS</li>
+                                <li>TCP/IP</li>
+                                <li>VLAN</li>
+                            </ul>
                         </li>
                         <li>
-                            <p class="skill-title">Docker, Ansible</p>
+                            <span class="skill-category">Virtualisation</span>
+                            <ul class="skill-item">
+                                <li>DOCKER</li>
+                                <li>VMWARE</li>
+                                <li>VIRTUALBOX</li>
+                            </ul>
                         </li>
                         <li>
-                            <p class="skill-title">PostgreSQL, Mysql</p>
+                            <span class="skill-category">Base de données</span>
+                            <ul class="skill-item">
+                                <li>POSTGRESQL</li>
+                                <li>MYSQL</li>
+                            </ul>
                         </li>
                         <li>
-                            <p class="skill-title">Nagios</p>
+                            <span class="skill-category">Systèmes d'exploitation</span>
+                            <ul class="skill-item">
+                                <li>LINUX</li>
+                                <li>WINDOWS</li>
+                                <li>FREEBSD</li>
+                                <li>OPENBSD</li>
+                            </ul>
                         </li>
                         <li>
-                            <p class="skill-title">VmWare, VirtualBox</p>
+                            <span class="skill-category">Langages de programmation</span>
+                            <ul class="skill-item">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>JAVA</li>
+                                <li>PYTHON</li>
+                                <li>PHP</li>
+                            </ul>
                         </li>
                         <li>
-                            <p class="skill-title"> Linux, Windows, Freebsd, Openbsd.</p>
+                            <span class="skill-category">Frameworks et outils</span>
+                            <ul class="skill-item">
+                                <li>REACT.JS</li>
+                                <li>BOOTSTRAP</li>
+                                <li>MATERIALIZE</li>
+                                <li>ANSIBLE</li>
+                                <li>NAGIOS</li>
+                            </ul>
                         </li>
                         <li>
-                            <p class="skill-title">HTML, CSS, JavaScript, JAVA</p>
-                        </li>
-                        <li>
-                            <p class="skill-title">Python, PHP, React.js,
-                                 Bootstrap, Materialize.</p>
-                                
-                        </li>
-                        <li>
-                            <p class="skill-title">Trello, Github, Notion</p>
-                        </li>
-                        <li>
-                            <p class="skill-title">Anglais (niveau B1)</p>
+                            <span class="skill-category">Outils de gestion de projet</span>
+                            <ul class="skill-item">
+                                <li>TRELLO</li>
+                                <li>GITHUB</li>
+                                <li>NOTION</li>
+                            </ul>
                         </li>
                     </ul>
                 </section>
 
                             <!-- Projets academiques -->
 
-                <div class="references-section">
-                    <h3 class="main-title">Projet academique</h3>
-                    <div class="referee">
-                        <h6 class="sub-title">Jeu hangman</h6>
-                        
-                        <p class="sub-para">un jeu realisé avec le language Python</p>
-                    </div>
-
-                    <div class="referee">
-                        <h6 class="sub-title">You Shall Not Pass </h6>
-
-                        <p class="sub-para"> la mise en place d'une
-                            passerelle sécurisée basé sur OpenBSD, ainsi que
-                            la gestion de serveurs web basé sur FreeBSD </p>
-                     
-                    </div>
-                    <div class="referee">
-                        <h6 class="sub-title">Job Board </h6>
-
-                        <p class="sub-para">Techno utilisé, HTML, CSS, Javascript
-                            et un Framework Symfony version 6.1</p>
-                    
-                    </div>
-
-                    <div class="referee">
-                        <h6 class="sub-title"> ChessGame </h6>
-                        <p class="sub-para">  Un jeu 2D réalisé en JAVA</p>
-                    
-                    </div>
-
-                </div>
+                            <section class="references-section">
+                                <h3 class="main-title" id="toggleProjects">Projets academique</h3>
+                                <div class="project-list">
+                                    <div class="referee">
+                                        <h6 class="sub-title">Jeu hangman</h6>
+                                        <p class="sub-para">un jeu realisé avec le language Python</p>
+                                    </div>
+                                    <div class="referee">
+                                        <h6 class="sub-title">You Shall Not Pass </h6>
+                                        <p class="sub-para"> la mise en place d'une
+                                            passerelle sécurisée basé sur OpenBSD, ainsi que
+                                            la gestion de serveurs web basé sur FreeBSD </p>
+                                    </div>
+                                    <div class="referee">
+                                        <h6 class="sub-title">Job Board </h6>
+                                        <p class="sub-para">Techno utilisé, HTML, CSS, Javascript
+                                            et un Framework Symfony version 6.1</p>
+                                    </div>
+                                    <div class="referee">
+                                        <h6 class="sub-title"> ChessGame </h6>
+                                        <p class="sub-para">  Un jeu 2D réalisé en JAVA</p>
+                                    </div>
+                                </div>
+                            </section>
             </div>
         </section>
         <section class="right-section">
@@ -146,7 +177,9 @@
                         <div class="left-tl-content">
                             <h5 class="tl-title">EPITECH</h5>
                             <h5 class="tl-title"></h5>
-                            <p class="para">2023 - 2026</p>
+                            <p class="para">2023 - 2026
+                        
+                            </p>
                         </div>
                         <div class="right-tl-content">
                             <div class="tl-content">
@@ -176,7 +209,7 @@
                                 <h5 class="tl-title-2"> Licence en Réseau Informatique</h5><br>
                                 <p class="para">
                                     L'obtention de ma licence m'a permis d'acquérir des compétences solides en réseaux, 
-                                    notamment la conception, l'administration et la sécurité des systèmes de communication.
+                                    notamment la conception, l'administration et la sécurité des systèmes. 
                                 </p>
                             </div>
                         </div>
@@ -189,13 +222,7 @@
                         <div class="right-tl-content">
                             <div class="tl-content">
                                 <h5 class="tl-title-2"> DTS en Réseau informatique bac+2 </h5><br>
-                               <!-- 
-                                <p class="para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                    voluptatem deleniti, 
-                                    laboriosam odio nobis quae fugit facilis quo.
-                                </p>
-                                -->
+
                             </div>
                         </div>
                     </div>
@@ -205,71 +232,47 @@
                     <h2 class="right-title">Experience</h2>
                     <div class="timeline">
                         <div class="left-tl-content">
-                            <h5 class="tl-title">Entreprise</h5>
-                            <p class="para">2017 - 2019</p>
+                            <h5 class="tl-title">Foundever, Dakar/Sénégal </h5>
+                            <p class="para"> Janvier 2023 - Juillet 2023</p>
                         </div>
                         <div class="right-tl-content">
                             <div class="tl-content">
-                                <h5 class="tl-title-2">Poste Occupé</h5>
+                                <h5 class="tl-title-2">Téléconseiller Engie</h5>
                                 <p class="para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                    voluptatem deleniti, 
-                                    laboriosam odio nobis quae fugit facilis quo.
+                                    Mes responsabilités comprenaient la gestion
+                                    efficace des réclamations des clients, la
+                                    communication claire et concise par écrit, et la
+                                    résolution proactive des problèmes pour assurer
+                                    une expérience client positive.
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="left-tl-content">
-                            <h5 class="tl-title">Entreprise</h5>
-                            <p class="para">2019 - 2020</p>
+                            <h5 class="tl-title">Foundever, Dakar/Sénégal </h5>
+                            <p class="para">Novembre 2021 - Décembre 2022</p>
                         </div>
                         <div class="right-tl-content">
                             <div class="tl-content">
-                                <h5 class="tl-title-2">Poste Occupé</h5>
+                                <h5 class="tl-title-2">Téléconseiller Chronopost</h5>
                                 <p class="para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                    voluptatem deleniti, 
-                                    laboriosam odio nobis quae fugit facilis quo.
+                                    Mes responsabilités incluaient l'analyse des
+                                    problèmes, la communication claire avec les
+                                    clients, et la recherche de solutions rapides et
+                                    satisfaisantes pour assurer une expérience client
+                                    optimale.
+
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="timeline">
-                        <div class="left-tl-content">
-                            <h5 class="tl-title">Entreprise</h5>
-                            <p class="para">2019 - 2020</p>
-                        </div>
-                        <div class="right-tl-content">
-                            <div class="tl-content">
-                                <h5 class="tl-title-2">Poste Occupé</h5>
-                                <p class="para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                    voluptatem deleniti, 
-                                    laboriosam odio nobis quae fugit facilis quo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="left-tl-content">
-                            <h5 class="tl-title">Entreprise</h5>
-                            <p class="para">2020 - Present</p>
-                        </div>
-                        <div class="right-tl-content">
-                            <div class="tl-content">
-                                <h5 class="tl-title-2">Poste Occupé</h5>
-                                <p class="para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate vitae 
-                                    voluptatem deleniti, 
-                                    laboriosam odio nobis quae fugit facilis quo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
                 </section>
                 
-                <!-- VIDE -->
+            <!-- VIDE
 
                 <section class="awards sect">
                     <h2 class="right-title">VIDE</h2>
@@ -306,22 +309,27 @@
                         </div>
                     </div>
                 </section>
+
+             -->
             </div>
         </section>
     </main>
 
     <script>
-        const toggleSkillsBtn = document.getElementById('toggleSkills');
-        const skillsList = document.getElementById('skillsList');
+        const toggleSkills = document.getElementById('toggleSkills');
+        const skillList = toggleSkills.nextElementSibling;
 
-        toggleSkillsBtn.addEventListener('click', () => {
-            if (skillsList.style.display === 'none') {
-                skillsList.style.display = 'block';
-                
-            } else {
-                skillsList.style.display = 'none';
-                
-            }
+        toggleSkills.addEventListener('click', () => {
+            skillList.classList.toggle('skill-list');
+        });
+    </script>
+
+    <script>
+        const toggleProjects = document.getElementById('toggleProjects');
+        const projectList = toggleProjects.nextElementSibling;
+
+        toggleProjects.addEventListener('click', () => {
+            projectList.classList.toggle('project-list');
         });
     </script>
 

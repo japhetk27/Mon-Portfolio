@@ -69,9 +69,11 @@ body{
 }
 
 .main-title{
+    /*
     font-size: 1.8rem;
-    text-transform: uppercase;
     letter-spacing: 1px;
+    */
+    text-transform: uppercase;
     color: #f7f7f7ec;
     padding-top: 3rem;
 }
@@ -94,11 +96,40 @@ body{
 
 .skills-section ul{
     padding-top: 2rem;
+    color: white;
 }
 .skills-section ul li{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: .4rem 0;
+}
+
+
+.skill-list {
+    display: none;
+}
+
+.skill-category {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: navajowhite;
+    
+}
+
+.skill-item {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.skill-title {
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .progress-bar{
